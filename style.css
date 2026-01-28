@@ -197,11 +197,12 @@ nav a:hover::after {
   height: 200px;
   border-radius: 50%;
   overflow: hidden;   
-  border: 5px solid #6c63ff;  /* thick, solid border */
+  border: 5px solid #6c63ff;  /* optional: thick border for circle */
   animation: float 6s infinite alternate ease-in-out;
-  background: none;  /* 🔴 remove opacity and background */
-  z-index: 1;        /* optional: keep it on top */
+  background: none;  /* 🔴 remove background */
+  opacity: 1;        /* 🔴 make fully visible */
 }
+
 
 
 
