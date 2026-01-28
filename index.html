@@ -1,230 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Chinthala Sirisha | Portfolio</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* HEADER */
-header{
-    position:sticky;
-    top:0;
-    background:#fff;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 40px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
-    z-index:1000;
-}
-
-header h2{
-    color:#4f46e5;
-}
-
-nav a{
-    margin-left:20px;
-    text-decoration:none;
-    color:#333;
-    font-weight:bold;
-}
-
-nav a:hover{
-    color:#4f46e5;
-}
-
-/* HERO */
-.hero{
-    height:90vh;
-    background:linear-gradient(to right,#4f46e5,#9333ea);
-    color:white;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:3rem;
-    animation:fadeDown 1.5s ease;
-}
-
-.hero p{
-    margin-top:10px;
-    font-size:1.2rem;
-}
-
-@keyframes fadeDown{
-    from{opacity:0; transform:translateY(-40px);}
-    to{opacity:1; transform:translateY(0);}
-}
-
-/* SECTION */
-section{
-    padding:60px 40px;
-    text-align:center;
-}
-
-section h2{
-    margin-bottom:20px;
-    color:#333;
-}
-
-/* ABOUT */
-.about p{
-    max-width:700px;
-    margin:auto;
-    line-height:1.6;
-}
-
-.facts{
-    list-style:none;
-    margin-top:20px;
-}
-
-.facts li{
-    margin:8px 0;
-}
-
-/* SKILLS */
-.skills span{
-    display:inline-block;
-    background:#4f46e5;
-    color:white;
-    padding:10px 15px;
-    margin:8px;
-    border-radius:20px;
-}
-
-/* GALLERY */
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:15px;
-    margin-top:30px;
-}
-
-.gallery img{
-    width:100%;
-    border-radius:10px;
-    transition:transform 0.4s;
-}
-
-.gallery img:hover{
-    transform:scale(1.1);
-}
-
-/* CONTACT */
-.contact{
-    background:#f4f4f4;
-}
-
-/* FOOTER */
-footer{
-    background:#333;
-    color:white;
-    padding:15px;
-    text-align:center;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-    header{
-        flex-direction:column;
-    }
-    nav{
-        margin-top:10px;
-    }
-    .hero h1{
-        font-size:2.2rem;
-    }
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sirisha | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header>
-    <h2>Sirisha</h2>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<header class="header">
+  <h1 class="logo">Sirisha.</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#internships">Internships</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="toggleTheme">🌙</button>
 </header>
 
-<!-- HERO -->
-<section id="home" class="hero">
-    <h1>Chinthala Sirisha</h1>
-    <p>UI / Frontend Intern | CSE Student</p>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-        I am a motivated final-year B.Tech Computer Science and Engineering student
-        seeking an entry-level opportunity to apply my academic knowledge and
-        technical skills in real-world projects while contributing to organizational growth.
+<section class="hero">
+  <div class="hero-text">
+    <h2 class="reveal">Hi, I'm Chinthala Sirisha 👋</h2>
+    <p class="reveal delay">
+      Final-Year B.Tech CSE Student | Aspiring Software Engineer
     </p>
-
-    <ul class="facts">
-        <li>🎓 B.Tech CSE – 81%</li>
-        <li>💻 HTML, CSS, Java, C</li>
-        <li>📍 Andhra Pradesh</li>
-    </ul>
+  </div>
+  <div class="floating-shape"></div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Java</span>
-        <span>C</span>
-        <span>SQL</span>
-        <span>Machine Learning Basics</span>
+<section id="about" class="section">
+  <div>
+    <h3>Career Objective</h3>
+    <p>
+      Motivated and detail-oriented final-year B.Tech Computer Science student
+      seeking an entry-level opportunity to apply academic knowledge and
+      technical skills in real-world projects while contributing to
+      organizational growth.
+    </p>
+  </div>
+</section>
+
+<section id="education" class="section alt">
+  <h3>Education</h3>
+  <ul class="list">
+    <li>
+      <strong>B.Tech – Computer Science & Engineering</strong><br>
+      Ravindra College of Engineering for Women (2022–2026)<br>
+      Percentage: 81%
+    </li>
+    <li>
+      <strong>Intermediate (MPC)</strong><br>
+      AP Model School Junior College (2020–2022)<br>
+      Percentage: 83%
+    </li>
+    <li>
+      <strong>SSC</strong><br>
+      AP Model School Junior College, Pamulapadu (2020)<br>
+      Percentage: 99%
+    </li>
+  </ul>
+</section>
+
+<section id="skills" class="section">
+  <h3>Technical Skills</h3>
+  <div class="skills">
+    <span>C</span>
+    <span>Java</span>
+    <span>HTML (Basics)</span>
+    <span>CSS</span>
+    <span>SQL</span>
+    <span>Machine Learning Basics</span>
+  </div>
+
+  <h3 style="margin-top:2rem;">Soft Skills</h3>
+  <div class="skills">
+    <span>Teamwork</span>
+    <span>Communication</span>
+    <span>Time Management</span>
+    <span>Problem Solving</span>
+    <span>Adaptability</span>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h3>Academic Project</h3>
+  <div class="cards">
+    <div class="card">
+      <h4>Advanced Heart Attack Risk Prediction</h4>
+      <p>
+        Developed a machine learning-based system using stacked hybrid and
+        ensemble models to predict heart attack risk. Used Kaggle heart
+        disease dataset and evaluated models using accuracy, precision,
+        recall, and F1-score. Designed a web interface for real-time prediction.
+      </p>
     </div>
+  </div>
 </section>
 
-<!-- GALLERY -->
-<section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-        <img src="https://via.placeholder.com/300">
-        <img src="https://via.placeholder.com/300">
-        <img src="https://via.placeholder.com/300">
-    </div>
+<section id="internships" class="section alt">
+  <h3>Internships</h3>
+  <ul class="list">
+    <li>
+      <strong>Full Stack Development Intern</strong><br>
+      Smart Bridge Educational Services<br>
+      Worked on end-to-end web application development using HTML, CSS,
+      JavaScript, and backend integration.
+    </li>
+    <li>
+      <strong>Application Developer – Web & Mobile</strong><br>
+      Rooman Technologies (May 2025 – July 2025)<br>
+      Developed responsive web and mobile applications and integrated APIs
+      for enhanced functionality.
+    </li>
+  </ul>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email: chintalashirisha50@gmail.com</p>
-    <p>Phone: 8074300603</p>
-    <p>Location: Erraguduru, Andhra Pradesh</p>
+<section id="contact" class="section">
+  <h3>Contact</h3>
+  <p>📍 Erraguduru, Andhra Pradesh – 518442</p>
+  <p>📞 +91 8074300603</p>
+  <p>✉ chintalashirisha50@gmail.com</p>
+
+  <div class="resume-buttons">
+    <a class="btn outline"
+       href="https://docs.google.com/document/d/16Uzxhn_FRGGNSM3X-NLyrfHqsBGLVUYN/view"
+       target="_blank">
+      View Resume
+    </a>
+  </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-    © 2026 Chinthala Sirisha | Portfolio
-</footer>
-
-<script>
-console.log("Portfolio Loaded Successfully");
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
