@@ -188,18 +188,14 @@ nav a:hover::after {
 /* FORCE PROFILE IMAGE INTO CIRCLE */
 
 .floating-shape {
-  width: 200px;
-  height: 200px;
-  border-radius: 50% !important;
-  overflow: hidden !important;
-  border: 4px solid #6c63ff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;   /* 🔴 THIS IS THE MOST IMPORTANT LINE */
 }
-
-/* THIS IS THE KEY FIX */
 .floating-shape img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50% !important;  /* 🔴 FORCE CIRCLE */
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* prevents stretching */
+    border-radius: 50%;
 }
