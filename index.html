@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sirisha | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -15,58 +15,122 @@
     <a href="#education">Education</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#internships">Internships</a>
     <a href="#contact">Contact</a>
   </nav>
   <button id="toggleTheme">🌙</button>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="profile-circle">
-    <img src="profile.jpeg" alt="Sirisha Profile Photo">
+  <div class="hero-text">
+    <h2 class="reveal">Hi, I'm Chinthala Sirisha 👋</h2>
+    <p class="reveal delay">
+      Final-Year B.Tech CSE Student | Aspiring Software Engineer
+    </p>
   </div>
-
-  <h2>Hi, I'm Chinthala Sirisha 👋</h2>
-  <p>Final-Year B.Tech CSE Student | Aspiring Software Engineer</p>
+  <div class="floating-shape"></div>
 </section>
 
 <section id="about" class="section">
-  <h3>Career Objective</h3>
-  <p>
-    Motivated and detail-oriented final-year Computer Science student seeking
-    an entry-level role to apply academic knowledge and technical skills.
-  </p>
+  <div>
+    <h3>Career Objective</h3>
+    <p>
+      Motivated and detail-oriented final-year B.Tech Computer Science student
+      seeking an entry-level opportunity to apply academic knowledge and
+      technical skills in real-world projects while contributing to
+      organizational growth.
+    </p>
+  </div>
 </section>
 
 <section id="education" class="section alt">
   <h3>Education</h3>
-  <ul>
-    <li><b>B.Tech CSE</b> – 81%</li>
-    <li><b>Intermediate (MPC)</b> – 83%</li>
-    <li><b>SSC</b> – 99%</li>
+  <ul class="list">
+    <li>
+      <strong>B.Tech – Computer Science & Engineering</strong><br>
+      Ravindra College of Engineering for Women (2022–2026)<br>
+      Percentage: 81%
+    </li>
+    <li>
+      <strong>Intermediate (MPC)</strong><br>
+      AP Model School Junior College (2020–2022)<br>
+      Percentage: 83%
+    </li>
+    <li>
+      <strong>SSC</strong><br>
+      AP Model School Junior College, Pamulapadu (2020)<br>
+      Percentage: 99%
+    </li>
   </ul>
 </section>
 
 <section id="skills" class="section">
-  <h3>Skills</h3>
+  <h3>Technical Skills</h3>
   <div class="skills">
-    <span>C</span><span>Java</span><span>HTML</span><span>CSS</span>
-    <span>SQL</span><span>Machine Learning Basics</span>
+    <span>C</span>
+    <span>Java</span>
+    <span>HTML (Basics)</span>
+    <span>CSS</span>
+    <span>SQL</span>
+    <span>Machine Learning Basics</span>
+  </div>
+
+  <h3 style="margin-top:2rem;">Soft Skills</h3>
+  <div class="skills">
+    <span>Teamwork</span>
+    <span>Communication</span>
+    <span>Time Management</span>
+    <span>Problem Solving</span>
+    <span>Adaptability</span>
   </div>
 </section>
 
-<section id="projects" class="section alt">
-  <h3>Project</h3>
-  <div class="card">
-    <h4>Advanced Heart Attack Risk Prediction</h4>
-    <p>ML system using stacked hybrid models to predict risk.</p>
+<section id="projects" class="section">
+  <h3>Academic Project</h3>
+  <div class="cards">
+    <div class="card">
+      <h4>Advanced Heart Attack Risk Prediction</h4>
+      <p>
+        Developed a machine learning-based system using stacked hybrid and
+        ensemble models to predict heart attack risk. Used Kaggle heart
+        disease dataset and evaluated models using accuracy, precision,
+        recall, and F1-score. Designed a web interface for real-time prediction.
+      </p>
+    </div>
   </div>
+</section>
+
+<section id="internships" class="section alt">
+  <h3>Internships</h3>
+  <ul class="list">
+    <li>
+      <strong>Full Stack Development Intern</strong><br>
+      Smart Bridge Educational Services<br>
+      Worked on end-to-end web application development using HTML, CSS,
+      JavaScript, and backend integration.
+    </li>
+    <li>
+      <strong>Application Developer – Web & Mobile</strong><br>
+      Rooman Technologies (May 2025 – July 2025)<br>
+      Developed responsive web and mobile applications and integrated APIs
+      for enhanced functionality.
+    </li>
+  </ul>
 </section>
 
 <section id="contact" class="section">
   <h3>Contact</h3>
+  <p>📍 Erraguduru, Andhra Pradesh – 518442</p>
   <p>📞 +91 8074300603</p>
   <p>✉ chintalashirisha50@gmail.com</p>
+
+  <div class="resume-buttons">
+    <a class="btn outline"
+       href="https://docs.google.com/document/d/16Uzxhn_FRGGNSM3X-NLyrfHqsBGLVUYN/view"
+       target="_blank">
+      View Resume
+    </a>
+  </div>
 </section>
 
 <script src="script.js"></script>
