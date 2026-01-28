@@ -179,3 +179,22 @@ nav a:hover::after {
 @media (max-width: 768px) {
   nav { display: none; }
 }
+/* ============================= */
+/* PROFILE IMAGE FLOATING CIRCLE */
+/* ============================= */
+
+.floating-shape {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;              /* IMPORTANT */
+  border: 4px solid #6c63ff;
+  margin-top: 20px;
+}
+
+.floating-shape img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             /* IMPORTANT */
+}
+
