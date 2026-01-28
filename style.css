@@ -183,18 +183,23 @@ nav a:hover::after {
 /* PROFILE IMAGE FLOATING CIRCLE */
 /* ============================= */
 
+/* PROFILE FLOATING CIRCLE FIX */
+
 .floating-shape {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  overflow: hidden;              /* IMPORTANT */
+  overflow: hidden;        /* 🔴 MUST BE PRESENT */
   border: 4px solid #6c63ff;
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* IMAGE STRICTLY INSIDE CIRCLE */
 .floating-shape img {
   width: 100%;
   height: 100%;
-  object-fit: cover;             /* IMPORTANT */
+  object-fit: cover;       /* 🔴 MUST BE PRESENT */
+  display: block;
 }
-
